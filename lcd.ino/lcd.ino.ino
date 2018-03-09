@@ -34,12 +34,12 @@ int read_LCD_buttons(){               // wczytanie przycisku a
     return btnNONE;   // when all others fail, return this.
 }
 
-int beep()
+int beep()      //funkcja głośnika
 {
   lcd.begin(16,2);
   lcd.setCursor(0,0);
   lcd.print("PRESS SELECT");
-  if(read_LCD_buttons()==btnSELECT)
+  if(read_LCD_buttons()==btnSELECT)     //po naciśnięciu SELECT wykona się instrukcja w nawiasie
   {
     tone(Glosnik,4000,200);
     }  
