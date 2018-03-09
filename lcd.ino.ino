@@ -12,7 +12,7 @@ LiquidCrystal lcd(8,9,4,5,6,7);
 int lcd_key     =0;
 int adc_key_in  =0;
 
-int read_LCD_buttons(){               // wczytanie przycisku
+int read_LCD_buttons(){               // wczytanie przycisku a
     adc_key_in = analogRead(0);       // wczytaj wartość z sensora
 
     // my buttons when read are centered at these valies: 0, 144, 329, 504, 741
